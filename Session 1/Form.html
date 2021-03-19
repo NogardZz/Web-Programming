@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+</head>
+<body>
+    <h1><p><b>SUBSCRIBE NEW ACCOUNT</b></p></h1>
+    <h2><p>Please fill the information below to register new account</p></h2>
+    <form action="action_page.php" method="POST">
+        <!--method = "POST": Khong hien thi tren thanh dia chi-->
+        <!--name: bien-->
+        <!--type = "text"-->
+        <label for="fname"><b>Name: </b></label>
+        <input type="text" placeholder="Enter Name" id="fname" name="fname"><br><br>
+        <!--type = "password"-->
+        <label for="psw"><b>Password: </b></label>
+        <input type="password" placeholder="Enter Password" id="psw" name="psw"><br><br>
+        <label for="psw2"><b>Enter the password again: </b> </label>
+        <input type="password" placeholder="Enter the password again" id="psw2" name="psw"><br><br>
+        <!--type = "file"-->
+        <label for="myfile"><b>Profile Picture: </b></label>
+        <input type="file" id="myfile" name="myfile"><br><br>
+        <!--type = "radio"-->
+        <lable for="gder"><b>Choose a gander: </b></lable>
+        <input type="radio" id="gder" name="gder" value="Female"><i>Female</i>
+        <input type="radio" id="gder" name="gder" value="Male"><i>Male</i>
+        <input type="radio" id="gder" name="gder" value="Diffrent"><i>Other</i><br><br>
+        <label for="jobs"><b>Choose a jobs: </b></label>
+        <!--select & option-->
+        <!--Ten bien dat trong the select-->
+        <select id="jobs" name="jobs">
+            <option value="Pupil">Pupil</option>
+            <option value="Student">Student</option>
+            <option value="Teacher">Teacher</option>
+        </select><br><br>
+        <!--type = "checkbox"-->
+        <lable for="interests"><b>Choose a interests: </b></lable>
+        <input type="checkbox" id="interests" name="interests[]" value="Sports"><i>Sports</i>
+        <input type="checkbox" id="interests" name="interests[]" value="Travel"><i>Travel</i>
+        <input type="checkbox" id="interests" name="interests[]" value="Music"><i>Music</i><br>
+        <input type="checkbox" id="interests" name="interests[]" value="Fashion"><i>Fashion</i>
+        <br><br>
+        <!--type = "submit"-->
+        <input type="submit" value="Subscribe">
+        <!--type = "reset"-->
+        <input type="reset" value="Reset">
+    </form>
+    </iframe>
+</body>
+</html>
